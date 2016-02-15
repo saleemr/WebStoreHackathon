@@ -1,173 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Store</title>
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet"><!--TODO: please change bootstrap link to the one you had-->
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Web Store</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul id="mainNav" class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+              <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="mainSection">
+        <div id="products">
+          <ul><!--TODO: this list items have to be done dynamically for each product, remove them when your code is ready-->
+            <li>PRODUCT1
+              <ul>
+                <li>ADD</li>
+                <li>INFO</li>
+              </ul>
+            </li>
+            <li>PRODUCT2
+              <ul>
+                <li>ADD</li>
+                <li>INFO</li>
+              </ul>
+            </li>
+            <li>PRODUCT3
+              <ul>
+                <li>ADD</li>
+                <li>INFO</li>
+              </ul>
+            </li>
+            <li>AND SO ON
+              <ul>
+                <li>ADD</li>
+                <li>INFO</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="productNav">
 
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      </div>
 
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  
-  <link rel="stylesheet" href="style.css">
-  
-  <script src="app.js"></script>g
+      <footer>
 
-
-</head>
-
-
-<hr style="width:50%">
-
-
-
-<body>
-
-
-<div id="greeting" class="section">
-#
-
-  <h1>Hello, Welcome to My Page!</h1>
-  <p>I sell JavaScript books.</p>
-  <p>I have the best selection!</p>
-</div>
-
-<header>
-    Saleem's JavaScript Bookstore!
-
-    <!--
-    Even is it's not mandatory, it's common
-    practice to put the main navigation menu
-    within the main header
-    -->
-    <nav>
-      <ul>
-        <li><a href="#">Navigation</a></li>
-        <li><a href="#">Who we are</a></li>
-        <li><a href="#">What we do</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-	
-<hr style="width:50%">
-      <!--
-      Search form is another non-linear way
-      to navigate through a website.
-      -->
-      <form>
-        <input type="search" name="q" placeholder="Search query">
-        <input type="submit" value="Go!">
-      </form>
-    </nav>
-  </header>
-
-<section id="main">
-  <h1> A JavaScript Book Store</h1>
-  
-  </section>
-<hr width="50%">
-
-
-
-
-<div class="container">
-  <h1>JavaScript Books on Sale</h1>
-  <p>Hack Reactor Recommended Books</p> 
-</div>
-
-
-<hr style="width:50%">
-<footer>
-    Hack Reactor Remote Prep WebStoreHackathon project. February 15, 2016; All rights reserved.
-  </footer>
-
-<br>
-<script>
-
-var book1_logger = function(x) {
-	$('book1').append(x())
-
-};
-book1_logger(function() {
-    return "I should appear in div#book1!";
-});
-
-var book2_logger = function(x) {
-	$('book2').append(x())
-
-};
-book2_logger(function() {
-    return "I should appear in div#book2!";
-});
-
-
-</script>
-
-
-<div id="book1"> 
-
-<div id="book2">
-
-<h4>
-<em>Availble Books</em>
-<ol>
-<li>HTML and CSS: Design and Build Websites 1st Edition
-by Jon Duckett  (Author)</li>
-
-<hr size="2" width="50%" noshade style="color:#000000" align="left" />
-
-
-<!-- <img src="https://i.imgur.com/81qyN1y.jpg" alt="Sorry, the imag ei snot available"> -->
-<img src="book1.jpg" alt="Sorry, the image is not available">
-
-
-<li>JavaScript and JQuery: Interactive Front-End Web Development 1st Edition
-by Jon Duckett  (Author)</li>
-<img src="book2.jpg" alt="Sorry, the image is not available">
-
-<ol>
-
-</h4>
-<h3>Amazon Best Sellers - Best Sellers in JavaScript Programming </h3>
-<a href="http://www.amazon.com/Best-Sellers-Books-JavaScript-Programming/zgbs/books/3617" class="btn btn-default">Go to Amazon</a>
-
-<hr style="width:50%">
-
-
-
-
-<footer>
-    Hack Reactor Remote Prep WebStoreHackathon project. February 15, 2016; All rights reserved.
-  </footer>
-<hr style="width:50%">
-
-
-<a href="https://frontendmasters.com/courses/javascript-basics/functions/">Video Link - Functions in JavaScript// Aug 20, 2015
-From Basics of Programming with JavaScript by Kyle Simpson</a>
-  <a href="mailto:support@frontendmasters.com">Email to Publisher : MJG International (Publisher of Frontend Masters)</a>
-
-
-
-</body>
-<script>
-
-var book1_logger = function(x) {
-	$('book1').append(x())
-
-};
-book1_logger(function() {
-    return "I should appear in div#book1!";
-});
-
-var book2_logger = function(x) {
-	$('book2').append(x())
-
-};
-book2_logger(function() {
-    return "I should appear in div#book2!";
-});
-
-
-</script>
+      </footer>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script><!--TODO: please change bootstrap link to the one you had-->
+    <script src="app.js"></script>
+  </body>
 </html>

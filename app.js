@@ -60,4 +60,42 @@ var books = [
             
         ]
 
+/**
+ * Project: HackReactor.
+ * By: Ronny Rosabal
+ * Date: 2/11/16
+ * Time: 6:16 PM
+ * Content:
+ */
+
+//  TODO: this is the code I wrote (Ronny).
+var windowHeight = $(window).height() - ($('header').height() + $('footer').height());
+$('#mainNav a').click(function() {
+    if($(this).parent().hasClass("active")) {
+        $("#mainNav a").parent().removeClass("active");
+        $("#mainSection").slideUp(1000);
+        $("#productNav").slideUp(1000);
+    } else {
+        $("#mainNav a").parent().removeClass("active");
+        $(this).parent().addClass("active");
+        $("#mainSection").slideDown(1000, function() {
+            $(this).height(windowHeight);
+        });
+        $("#productNav").slideDown(1000, function() {
+            $(this).height("75px");
+        });
+    }
+});
+
+var html = "<ul>";
+
+for(var prop in obj){
+    if(prop === "image"){
+        html += "<li><img href='" + obj["prop"] + "'><ul><li>ADD</li><li>INFO</li></ul></li>";
+    }
+}
+html += "<ul>";
+
+$('#products').append( html );
+
        
