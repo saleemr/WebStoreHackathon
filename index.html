@@ -5,7 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web Store</title>
-    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet"><!--TODO: please change bootstrap link to the one you had-->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+
+
+
+
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+
+
+    <!-- <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet"><!TODO: please change bootstrap link to the one you had 
+
+    ***Update*** - Made changes and added two bootstrap links one for js and one for css and jQuery link-->
+
+
     <link href="styles.css" rel="stylesheet">
   </head>
   <body>
@@ -14,13 +34,13 @@
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">Web Store</a>
+              <a class="navbar-brand" href="#">Ronny-Saleem Web Store</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul id="mainNav" class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
+                <li><a id='home' href="#">Home</a></li>
+                <li><a id='prod' href="#">Products</a></li>
+                <li><a id='about' href="#">About</a></li>
               </ul>
               <form class="navbar-form navbar-right" role="search">
                 <div class="form-group">
@@ -34,7 +54,12 @@
       </header>
       <div id="mainSection">
         <div id="products">
-          <ul><!--TODO: this list items have to be done dynamically for each product, remove them when your code is ready-->
+
+        
+          <!--  <ul>
+          
+
+            
             <li>PRODUCT1
               <ul>
                 <li>ADD</li>
@@ -59,8 +84,12 @@
                 <li>INFO</li>
               </ul>
             </li>
-          </ul>
+          </ul>  -->
+
         </div>
+
+
+
         <div id="productNav">
 
         </div>
@@ -68,11 +97,13 @@
       </div>
 
       <footer>
-
+      <p> © 2016 Ronny-Saleem Webstore.
+      All Rights Reserved.
+      </p>
       </footer>
     </div>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script><!--TODO: please change bootstrap link to the one you had-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!--TODO: please change bootstrap link to the one you had ***made changes****-->
     <script src="app.js"></script>
   </body>
 </html>
